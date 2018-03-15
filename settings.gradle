@@ -1,0 +1,4 @@
+include 'licensing-service'
+include 'confsvr'
+include 'organization-service'
+include 'eurekasvr'

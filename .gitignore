@@ -1,5 +1,6 @@
 # Java class files
 *.class
+.gradle
 
 # Eclipse project files
 .classpath
@@ -18,5 +19,7 @@
 /target
 /target/
 **/target/
+**/build/
+/build/
 
 .DS_Store

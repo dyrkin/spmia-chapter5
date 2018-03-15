@@ -10,18 +10,17 @@ By the time you are done reading this chapter you will have built and/or deploye
 5.  A Postgres SQL database used to hold the data for these two services.
 
 # Software needed
-1.	Apache Maven (http://maven.apache.org). I used version 3.3.9 of the Maven. I chose Maven because, while other build tools like Gradle are extremely popular, Maven is still the pre-dominate build tool in use in the Java ecosystem. All of the code examples in this book have been compiled with Java version 1.8.
-2.	Docker (http://docker.com). I built the code examples in this book using Docker V1.12 and above. I am taking advantage of the embedded DNS server in Docker that came out in release V1.11. New Docker releases are constantly coming out so it's release version you are using may change on a regular basis.
-3.	Git Client (http://git-scm.com). All of the source code for this book is stored in a GitHub repository. For the book, I used version 2.8.4 of the git client.
+1.	Docker (http://docker.com). I built the code examples in this book using Docker V1.12 and above. I am taking advantage of the embedded DNS server in Docker that came out in release V1.11. New Docker releases are constantly coming out so it's release version you are using may change on a regular basis.
+2.	Git Client (http://git-scm.com). All of the source code for this book is stored in a GitHub repository. For the book, I used version 2.8.4 of the git client.
 
 # Building the Docker Images for Chapter 5
 To build the code examples for Chapter 5 as a docker image, open a command-line window change to the directory where you have downloaded the chapter 5 source code.
 
-Run the following maven command.  This command will execute the [Spotify docker plugin](https://github.com/spotify/docker-maven-plugin) defined in the pom.xml file.  
+Run the following gradle command.  This command will execute the [Gradle Docker plugin](https://github.com/bmuschko/gradle-docker-plugin) defined in the build.gradle file.
 
-   **mvn clean package docker:build**
+   **./gradlew clean buildImage**
 
- Running the above command at the root of the project directory will build all of the projects.  If everything builds successfully you should see a message indicating that the build was successful.
+Running the above command at the root of the project directory will build all of the projects.  If everything builds successfully you should see a message indicating that the build was successful.
 
 # Running the services in Chapter 5
 
