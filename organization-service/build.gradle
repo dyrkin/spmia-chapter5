@@ -13,8 +13,6 @@ dependencies {
 
     compile('org.springframework.security:spring-security-rsa')
 
-    compile('com.netflix.hystrix:hystrix-javanica:1.5.12')
-
     compile('com.h2database:h2')
     compile('org.postgresql:postgresql:42.2.1.jre7')
 }
